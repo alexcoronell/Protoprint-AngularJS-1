@@ -1,0 +1,286 @@
+//------------------------------
+//   PATRON DE COLORES
+//------------------------------
+$texto:#818084;
+$principal:#0095d5;
+$secundario:#d59000;
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// CONFIGURACIONES BÁSICAS
+//------------------------------
+html {
+    font-size: 16px;
+}
+
+body {
+    color: $texto;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// ENCABEZADO Y MENU
+//------------------------------
+#encabezado {
+    background: $principal;
+    color: white;
+}
+
+#encabezado::after {
+    clear: both;
+}
+
+#info {
+    display: none;
+}
+
+.menu {
+    background: $principal;
+    display: flex;
+    flex-direction: row;
+}
+
+//LOGO
+.logo {
+    height: 60px;
+}
+
+.logo img {
+    height: 95%;
+}
+
+// MENU
+.boton-menu {
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: #fff;
+    margin-left: auto;
+    margin-right: .8rem;
+}
+
+.boton-menu:focus {
+    outline: 0;
+}
+
+#menu-principal {
+    flex: 1 1 100%;
+}
+
+#menu-principal ul {
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+}
+
+#menu-principal ul a {
+    display: block;
+    padding: .8rem 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-top: 1px solid #fff;
+    text-decoration: none;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+    background: $texto;
+    color: #fff;
+}
+
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// CONTENEDOR PRINCIPAL
+//------------------------------
+#principal-content {
+    margin-top: 4.5rem;
+}
+
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// SECCION CENTRO DE COPIADO
+//------------------------------
+.boton-quienes-somos button {
+    background: $principal;
+}
+
+.boton-quienes-somos a {
+    text-decoration: none;
+    color: white;
+}
+
+#imagen-centrodecopiado {
+    width: 90%;
+}
+
+.centrodecopiado img {
+    max-width: 280px;
+    border-radius: 50%;
+    border: 1px solid $principal;
+}
+
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// SECCION SERVICIOS
+//------------------------------
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// FOOTER
+//------------------------------
+footer {
+    background: $principal;
+    color: white;
+}
+
+.pie1,
+.pie2,
+.pie3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.menu-footer {
+    margin: 0 auto;
+    margin-top: .6rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menu-footer ul {
+    color: white;
+    list-style: none;
+    //width: 180px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-footer ul li {
+    margin: 0;
+    padding: 0;
+    //width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.datos-individuales {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.datos-individuales i {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 0;
+    margin-right: 1rem;
+}
+
+.datos-individuales p {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.redes-sociales li a i {
+    opacity: .8;
+    transition: all 1s ease;
+}
+
+.redes-sociales li a i:hover {
+    opacity: 1;
+}
+
+.secundary-footer {
+    background: $texto;
+    font-size: .9rem;
+}
+
+//-----------------------------------------------------------------------------------------------
+//------------------------------
+// INICIO RESPONSIVE
+//------------------------------
+//-----------------------------------------------------------------------------------------------
+//--------------- MAXIMO 767px ------------------------------------------------------------------
+@media (max-width: 767px) {
+    .texto-servicios,
+    .botones-servicio,
+    #menu-principal-desktop,
+    .encabezado-desktop {
+        display: none;
+    }
+    /** SECCION SERVICIOS **/
+    .servicios article {
+        display: flex;
+        align-items: center;
+        color: $texto;
+        margin: .9rem 0;
+    }
+    .servicios img {
+        width: 60px;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    .servicios h3 {
+        margin: 0;
+        font-size: 1rem;
+        flex: 1 1 auto;
+    }
+    .servicios article h3 a {
+        color: $texto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+    .servicios h3 a::after {
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 2rem;
+        margin-left: 1rem;
+        opacity: .6;
+        position: relative;
+        left: 0;
+        transition: all .5s ease;
+    }
+    .servicios h3 a:hover::after {
+        opacity: 1;
+        left: -1rem;
+    }
+    .texto-servicios1,
+    .texto-servicios2 {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+#info {
+    background: $texto;
+    color: white;
+    text-align: center;
+}
+
+#info ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#info ul li {
+    margin: .2rem 1rem;
+}

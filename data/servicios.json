@@ -1,0 +1,27 @@
+{
+    "servicios": [{
+        "id": 1,
+        "nombre": "Impresión Digital",
+        "descripcion": "Impresión digital hasta de 100x33 cm en adhesivos y papeles finos con laminado litográfico, personalización de producto impreso desde 1 unidad, afiches, volantes, tarjetas personales, diplomas, sticker, etiquetas, carpetas y tarjetas personalizadas para toda ocasión."
+    }, {
+        "id": 2,
+        "nombre": "Impresión Gran Formato",
+        "descripcion": "Impresión hasta de 1.80m x 3.20m a 1440dpi con tinta Ecosolvente. Disponemos de cabezales de impresión basados en la tecnología de inyección de tinta más avanzada de la industria, colocados de forma escalonada para maximizar la productividad."
+    }, {
+        "id": 3,
+        "nombre": "Diseño Gráfico",
+        "descripcion": "Diseño de tarjetas de presentación, volantes, piezas publicitarias, revistas y todo lo relacionado a publicidad impresa y digital."
+    }, {
+        "id": 4,
+        "nombre": "Sublimación",
+        "descripcion": "Vinilo textil en gorras y camisetas, garantizando que tu diseño tenga una larga duración."
+    }, {
+        "id": 5,
+        "nombre": "Diseño 3D",
+        "descripcion": "Modelado y presentación de proyectos y diseños arquitectónicos en 3D (3D Studio MAX)."
+    }, {
+        "id": 6,
+        "nombre": "Render de Producto",
+        "descripcion": "El modelado en 3D, nos permite previsualizar y publicitar el resultado final de nuestros productos."
+    }]
+}
