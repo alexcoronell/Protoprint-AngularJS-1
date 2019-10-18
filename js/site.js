@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //---------------------------- SLIDER PRINCIPAL PAGINA INICIO ----------------------------------------
 
 $('.owl-carousel').owlCarousel({
@@ -47,7 +46,6 @@ $('.owl-carousel').owlCarousel({
 //             margin: 20
 //         },
 //     }
-=======
 //---------------------------- SLIDER PRINCIPAL PAGINA INICIO ----------------------------------------
 
 $('.owl-carousel').owlCarousel({
@@ -96,5 +94,4 @@ $('.owl-carousel').owlCarousel({
 //             margin: 20
 //         },
 //     }
->>>>>>> b3ab241a4da8f29a63ea4caba22659e6368ce90c
 // })
