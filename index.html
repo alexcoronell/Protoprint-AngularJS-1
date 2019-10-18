@@ -36,32 +36,33 @@
     <!-- Mis estilos -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
+    <body>
+
+        <div ng-include src=" 'templates/menu.html' "></div>
+        <div ng-view id="principal-content"></div>
+        <div ng-include src=" 'templates/footer.html' "></div>
+
+
+        <!-- Scripts de AngularJS -->
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- Mis Scripts -->
+        <script src="js/rutas.js"></script>
+        <script src="js/site.js"></script>
+
+        <script>
+            $('.carousel').carousel()
+        </script>
 </head>
 
-<body>
-
-    <div ng-include src=" 'templates/menu.html' "></div>
-    <div ng-view id="principal-content"></div>
-    <div ng-include src=" 'templates/footer.html' "></div>
-
-
-    <!-- Scripts de AngularJS -->
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-
-    <!-- Mis Scripts -->
-    <script src="js/rutas.js"></script>
-    <script src="js/site.js"></script>
-
-    <!-- Mis Scripts -->
-    <script src="js/site.js"></script>
 </body>
 
 </html>
