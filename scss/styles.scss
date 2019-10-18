@@ -131,6 +131,51 @@ h2 {
 //------------------------------
 //-----------------------------------------------------------------------------------------------
 //------------------------------
+// SECCION CONTACTANOS
+//------------------------------
+.datafono-imagen {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.datafono-imagen img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.area-formulario {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+    margin: 0;
+    border: 1px solid $principal;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 1;
+}
+
+.area-formulario2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100%;
+    align-items: left;
+    padding: 0;
+    margin: 0;
+}
+
+.area-formulario2 form {
+    flex: 1 0 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.area-formulario2 button {
+    width: 100%;
+}
+
+//-----------------------------------------------------------------------------------------------
+//------------------------------
 // FOOTER
 //------------------------------
 footer {
@@ -282,5 +327,18 @@ footer {
     .texto-servicios1,
     .texto-servicios2 {
         display: none;
+    }
+    .formulario-div {
+        order: 0;
+    }
+    .datafono-imagen {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .datafono-imagen img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
     }
 }

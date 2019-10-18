@@ -1,4 +1,89 @@
-<section id="contactanos">
-    <h2>Contáctanos</h2>
-    Aquí irá el formulario
+<section class="py-2 mapa-contacto">
+    <div class="container py-2">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-md-6 col-lg-7 py-4 datafono-imagen text-center">
+                <h4>Nuevas opciones de pago para nuestros clientes</h4>
+                <img src="../img/datafono.svg" alt="Nuevas opciones de pago para nuestros clientes" class="py-4">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tarjetas-aceptadas">Conoce más</button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="tarjetas-aceptadas" tabindex="-1" role="dialog" aria-labelledby="tarjetas-aceptadas" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalVerticalLabel">Nuevas opciones de pago para nuestros clientes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Aceptamos todas las tarjetas de débito y crédito.
+                            <ul>
+                                <li>Maestro</li>
+                                <li>Visa</li>
+                                <li>Mastercard</li>
+                                <li>American Express</li>
+                                <li>Diners Club</li>
+                            </ul>
+                            También recibimos tus tarjetas en nuestros servicios a domicilio. Sólo debes solicitarlo previamente.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 formulario-div">
+                <div class="area-formulario container p1 wow shake">
+                    <h2 class="text-center mb-2 font-weight-bold">Contáctanos</h2>
+                    <div class="container">
+                        <div class="area-formulario2">
+                            <form action="php/email.php" method="post">
+                                <div class="form-group row">
+                                    <label for="nombre" class="col-12 col-form-label">Nombre (*)</label>
+                                    <div class="col-12 container-fluid">
+                                        <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" data-toggle="tooltip" data-placement="top" title="Ingrese su nombre completo">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="telefono" class="col-12 col-form-label">Teléfono (*)</label>
+                                    <div class="col-12">
+                                        <input class="form-control" type="text" id="telefono" name="telefono" placeholder="Ingrese su número telefónico" data-toggle="tooltip" data-placement="top" title="Ingrese su número telefónico">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-12 col-form-label">Correo Electrónico (*)</label>
+                                    <div class="col-12">
+                                        <input class="form-control" type="text" id="email" name="email" placeholder="Ingrese su Correo Electrónico" data-toggle="tooltip" data-placement="top" title="Ingrese su Correo Electrónico">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mensaje" class="col-12 col-form-label">Mensaje (*)</label>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="5" id="email" name="mensaje" placeholder="Ingrese su mensaje" data-toggle="tooltip" data-placement="bottom" title="Ingrese su mensaje o comentarios"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
