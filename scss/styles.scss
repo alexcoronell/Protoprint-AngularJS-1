@@ -364,3 +364,53 @@ footer {
         font-size: 1.1rem;
     }
 }
+
+//--------------- MINIMO 768px ------------------------------------------------------------------
+@media (min-width: 768px) {
+    .servicios article {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .servicios h3 {
+        margin: 0 0 .5 0;
+        font-size: 1.3rem;
+        flex: 0 1 auto;
+        height: 3rem;
+    }
+    .servicios article h3 a {
+        color: $texto;
+        text-decoration: none;
+    }
+    .servicios img {
+        overflow: hidden;
+        margin-bottom: .5rem;
+        transition: all 1s ease;
+    }
+    .servicios article:hover img {
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
+    .botones-servicio {
+        margin-top: auto;
+        background: $texto;
+    }
+    #carouselExampleIndicators2 .carousel-item img {
+        max-width: 400px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .texto-desliza {
+        display: none;
+    }
+}
+
+//--------------- MIAXMO 991px ------------------------------------------------------------------
+@media (max-width: 991px) {
+    .texto-servicios1,
+    .texto-servicios2 {
+        display: none;
+    }
+}
